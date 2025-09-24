@@ -1,7 +1,7 @@
 {
-  "name": "playwright-testrail-reporter",
+  "name": "@lychanminh91/playwright-testrail-reporter",
   "version": "1.2.1",
-  "description": "Report Playwright test results to TestRail",
+  "description": "Fork of Report Playwright test results to TestRail",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/niche-tester/playwright-testrail-reporter.git"
+    "url": "git+https://github.com/lychanminh91/playwright-testrail-reporter"
   },
   "bugs": {
-    "url": "https://github.com/niche-tester/playwright-testrail-reporter.git"
+    "url": "https://github.com/lychanminh91/playwright-testrail-reporter"
   },
-  "homepage": "https://github.com/niche-tester/playwright-testrail-reporter#readme",
+  "homepage": "https://github.com/lychanminh91/playwright-testrail-reporter#readme",
   "keywords": [
     "playwright",
     "testrail",
