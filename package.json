@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lychanminh91/playwright-testrail-reporter"
+    "url": "git+https://github.com/lychanminh91/playwright-testrail-reporter.git"
   },
   "bugs": {
     "url": "https://github.com/lychanminh91/playwright-testrail-reporter"
