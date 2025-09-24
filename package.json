@@ -1,5 +1,5 @@
 {
-  "name": "@lychanminh91/playwright-testrail-reporter",
+  "name": "playwright-testrail-reporter-fork",
   "version": "1.2.2",
   "description": "Fork of Report Playwright test results to TestRail",
   "main": "lib/index.js",
