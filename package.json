@@ -1,5 +1,5 @@
 {
-  "name": "playwright-testrail-reporter-fork",
+  "name": "playwright-testrail-reporter",
   "version": "1.2.2",
   "description": "Fork of Report Playwright test results to TestRail",
   "main": "lib/index.js",
@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "tsc --build tsconfig.json",
+    "prepublishOnly": "npm run build",
     "clean": "rimraf ./lib",
     "lint": "eslint -c ./eslintrc.json 'src/**/*.{ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
