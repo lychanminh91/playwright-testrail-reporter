@@ -4,6 +4,9 @@
   "description": "Fork of Report Playwright test results to TestRail",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": "./lib/src/index.js"
+  },
   "files": [
     "/lib",
     "vendor/**"
