@@ -1,6 +1,6 @@
 {
   "name": "playwright-testrail-reporter-fork",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Fork of Report Playwright test results to TestRail",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
