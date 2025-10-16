@@ -7,7 +7,7 @@ import type {
 	FullResult,
 	Reporter,
   } from '@playwright/test/reporter';
-  import TestRail from '@dlenroc/testrail';
+  import TestRail from '../vendor/testrail/dist/TestRail';
   import logger from './logger';
   import extractCaseIds from './caseIdExtractor';
   

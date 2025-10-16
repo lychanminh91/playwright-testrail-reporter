@@ -23,8 +23,8 @@
   "unpkg": "dist/TestRail.umd.js",
   "scripts": {
     "prepare": "npm run build",
-    "build": "rollup --bundleConfigAsCjs -c && replace-in-file '/(\\.\\.\\/)+src/g' '../src' 'dist/*.map' --isRegex",
-    "test": "mocha -A -r ts-node/register test/**/*.ts"
+    "build": "echo 'No build needed for vendored dist version'",
+    "test": "echo 'No tests for vendored package'"
   },
   "engines": {
     "node": ">=10"
