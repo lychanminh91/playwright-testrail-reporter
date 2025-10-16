@@ -34,7 +34,7 @@
   "author": "Denisha Surjoodeen",
   "license": "MIT",
   "dependencies": {
-    "@dlenroc/testrail": "^1.9.1",
+    "@dlenroc/testrail": "file:vendor/testrail",
     "@playwright/test": "^1.43.1",
     "chalk": "^4.1.2",
     "dotenv": "^16.0.0",
