@@ -7,7 +7,7 @@ import type {
 	FullResult,
 	Reporter,
   } from '@playwright/test/reporter';
-  import TestRail from '../vendor/testrail/dist/TestRail';
+  import TestRail from '../vendor/testrail/dist/TestRail.umd';
   import logger from './logger';
   import extractCaseIds from './caseIdExtractor';
   
@@ -130,14 +130,14 @@ import type {
 		suite_id: suiteId,
 	  })
 	  .then(
-		(res) => {
+		(res:any) => {
 		  logger(
 			`New TestRail run has been created: ${getEnv('TESTRAIL_HOST')}` +
 			  `/index.php?/runs/view/${res.id}`
 		  );
 		  process.env.TESTRAIL_RUN_ID = String(res.id);
 		},
-		(reason) => {
+		(reason:any) => {
 		  logger(`Failed to create new TestRail run: ${reason}`);
 		}
 	  );
@@ -159,7 +159,7 @@ import type {
 		() => {
 		  logger(`Updated status for caseId ${caseId} for runId ${runId}`);
 		},
-		(reason) => {
+		(reason:any) => {
 		  logger(`Failed to call Update Api due to ${JSON.stringify(reason)}`);
 		}
 	  );
@@ -190,7 +190,7 @@ import type {
 			  `/index.php?/runs/view/${runId}`
 		  );
 		},
-		(reason) => {
+		(reason:any) => {
 		  logger(`Failed to update test results: ${JSON.stringify(reason)}`);
 		}
 	  );
@@ -207,13 +207,13 @@ import type {
 		case_ids: caseIds,
 	  })
 	  .then(
-		(res) => {
+		(res:any) => {
 		  logger(
 			`TestRail run has been updated: ${getEnv('TESTRAIL_HOST')}` +
 			  `/index.php?/runs/view/${res.id}`
 		  );
 		},
-		(reason) => {
+		(reason:any) => {
 		  logger(`Failed to update the TestRail run: ${reason}`);
 		}
 	  );
